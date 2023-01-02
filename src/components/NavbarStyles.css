@@ -1,0 +1,55 @@
+.nav-section{
+    background-color: #4A266A;
+}
+
+.nav-container{
+    margin: 0 10%;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* <<<---------------------    Logo    --------------------->>> */
+
+.nav-a{
+    color: #FF8139;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.6rem;
+    cursor: pointer;
+    
+}
+
+.nav-logo{
+    width:50px;
+    height: auto;
+    vertical-align: baseline;
+}
+
+.nav-span{
+    color: #FFD9E8;
+}
+
+/* <<<---------------------    logout btn    --------------------->>> */
+
+.nav-logout{
+    text-decoration: none;
+    color: #FFD9E8;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background: linear-gradient(to left, #FF8139 50%, #fe5d00 50%) right;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: all .5s ease-in-out;
+}
+
+.nav-logout:hover{
+    background-position: left;
+    
+}

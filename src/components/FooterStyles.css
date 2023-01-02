@@ -1,0 +1,10 @@
+.footer-container{
+    background-color: #260D37;
+    color: #FFD9E8;
+    text-align: center;
+}
+.footer{
+    font-size: 0.8rem;
+    padding: 10px 0;
+    cursor: default;
+}
