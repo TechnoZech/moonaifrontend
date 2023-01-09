@@ -1,0 +1,149 @@
+ /* <<<========================    For Desktop    =========================>>>  */
+
+
+.login-section{
+    background: linear-gradient(99.11deg, #220A32 3.07%, #7F4A88 189.91%);
+    height: 100vh;
+}
+
+.login-container{
+    text-align: center;
+
+}
+
+/* <----------------     Main Titile    --------------> */
+
+.login-titile{
+    color: #FFD9E8;
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.login-hr{
+    background-color: #FFD9E8;
+    width: 25%;
+    border: 0;
+    height: 2px;
+}
+
+/* <----------------     Form     --------------> */
+
+.login-form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFD9E8;
+    margin: 30px 20% 0 20%;
+    padding: 50px 0;
+    border-radius: 50px;
+}
+
+
+.login-img{
+    width: 400px;
+}
+
+
+.form2-title{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #15071F;
+    margin-bottom: 30px;
+}
+
+
+/* <----------------     Input    --------------> */
+
+.login-form-input{
+    color: #15071F;
+    background-color: #FFD9E8;
+    margin-bottom: 20px;
+    padding: 13px 20px;
+    width: 65%;
+    outline: none;
+    border: 2px solid #15071F;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.login-form-input::placeholder{
+    color: #15071fcc;
+}
+
+.login-btn{
+    color: #15071F;
+    border: none;
+    padding: 8px 35px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 8px;
+    background: linear-gradient(to left, #FF8139 50%, #fe5d00 50%) right;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.login-btn:hover{
+    background-position: left;
+}
+
+.login-p{
+    margin: 15px 0;
+}
+
+.google-btn{
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 8px 40px;
+    color: #15071F;
+    vertical-align: middle;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.google-btn:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.google-icon{
+    width: 25px;
+    margin-right: 15px;
+}
+
+.google-btn > * {
+    vertical-align: middle;
+}
+
+ /* <<<========================    For Mobile    =========================>>>  */
+
+ @media screen and (max-width:1111px) {
+
+    .login-titile{
+        font-size: 1.6rem;
+        padding-top: 50px;
+        
+    }
+
+    .login-hr{
+        width: 60%;
+        height: 2px;
+    }
+
+    .login-form-container{
+        grid-template-columns: 1fr;
+        margin: 20px 5% 0 5%;
+        
+    }
+
+
+    .login-img{
+        width: 150px;
+    }
+
+
+ }

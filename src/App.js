@@ -1,14 +1,42 @@
+import React, {useState, useEffect} from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import axios from "axios";
 import './App.css';
-import Navbar from "./components/Navbar.jsx";
+import Login from "./components/Login.jsx";
 import Main from "./components/Main.jsx";
-import Footer from "./components/Footer.jsx";
+import Home from './components/Home';
+// import Footer from "./components/Footer.jsx";
 
 function App() {
+
+//Login and signup function
+const [user, setUser] = useState(null);
+
+	const getUser = async () => {
+		try {
+			const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
+			const { data } = await axios.get(url, { withCredentials: true });
+			setUser(data.user._json);
+		} catch (err) {
+			console.log(err);
+		}
+	};
+
+	useEffect(() => {
+		getUser();
+	}, []);
+
   return (
     <>
-      <Navbar />
-      <Main />
-      <Footer />
+      <Router>
+      {/* <Footer /> */}
+      <Routes>
+	  				<Route path='/Home' element={<Home />}/>
+	  				<Route path="*" element={ user ?  <Main /> : <Navigate to="/login" />} />
+					<Route path="/" element={user ? <Main user={user} /> : <Navigate to="/login" />} />
+					<Route path="/Login" element={user ? <Navigate to="/" /> : <Login />} />
+				</Routes>
+      </Router>
     </>
   );
 }

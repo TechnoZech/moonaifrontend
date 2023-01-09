@@ -1,24 +1,34 @@
 .main-section{
     background-color: #15071F;
-    height: 93vh;
+    height: 100vh;
     text-align: center;
+    overflow: auto;
 }
 
 .main-container{
-    margin: 0 10%;
+    margin: 0 20%;
+    
 }
 
 .search-and-btn-container{
-    padding-top: 47%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #15071f78;
+    backdrop-filter: blur(10px);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* <<<---------------------    Input bar    --------------------->>> */
 
 .main-input{
-    width: 70%;
+    width: 50%;
     background-color: #4A266A;
     color: #FFD9E8;
     border: none;
@@ -34,6 +44,7 @@ textarea::placeholder {
     color: #DE95BA;
     align-content: center;
     font-weight: 100;
+    letter-spacing: 0;
   }
 
   /* <<<---------------------    Search btn    --------------------->>> */
@@ -72,9 +83,14 @@ textarea::placeholder {
 
 .message-bar-container{
     display: flex;
-    padding-top: 50px;
+    padding-top: 0;
+    padding-bottom: 30px;
     position: relative;
-    
+    margin-right: 70px;
+}
+
+.main-container:last-child{
+  margin-bottom: 120px;
 }
 
 .profile-container{
@@ -97,7 +113,103 @@ textarea::placeholder {
     background-color: #260D37;
     border-radius: 5px;
     padding: 5px 20px;
-    line-height: 2.5rem;
+    line-height: 2rem;
     margin-left: 70px;
     text-align: left;
+}
+  /* <<<---------------------    Message bar 2   --------------------->>> */
+
+
+
+.message-bar-container2{
+  display: flex;
+  padding-bottom: 30px;
+  margin-left: 70px;
+  position: relative;
+  justify-content: flex-end ;
+  
+}
+
+.main-container:first-child{
+  margin-top: 100px;
+}
+
+.main-container:last-child{
+  margin-bottom: 80px;
+}
+
+.profile-container2{
+  background-color: #4A266A;
+  padding: 12px 10px 8px 10px;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+.profile-img2{
+  width: 30px;
+  height: auto;
+  margin: auto;
+}
+
+
+.message-bar2{
+  color: #FFD9E8;
+  background-color: #4A266A;
+  border-radius: 5px;
+  padding: 5px 20px;
+  line-height: 2rem;
+  margin-right: 70px;
+  text-align: left;
+}
+
+/* <<<---------------------    For Mobile  --------------------->>> */
+
+
+@media screen and (max-width:850px) {
+
+  .main-container{
+    margin: 0 2%;
+    
+}
+
+
+
+/* <<<---------------------    Input bar    --------------------->>> */
+
+.main-input{
+  font-size: 1rem;
+  padding: 12px 20px;
+}
+
+textarea::placeholder {
+  color: #DE95BA;
+  align-content: center;
+  font-weight: 100;
+  letter-spacing: 0;
+}
+
+.main-search-btn{
+  padding: 9px 20px;
+  margin-left: 10px;
+}
+
+.search-icon{
+  padding-left: 5px;
+  font-size: 1rem;
+}
+
+/* <<<---------------------    Message bar    --------------------->>> */
+
+.message-bar{
+  margin-left: 60px;
+}
+
+/* <<<---------------------    Message bar 2   --------------------->>> */
+
+.message-bar2{
+  margin-right: 60px;
+}
+
 }

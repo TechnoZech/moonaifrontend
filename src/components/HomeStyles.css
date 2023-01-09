@@ -1,0 +1,154 @@
+.home-section{
+    background: linear-gradient(99.11deg, #220A32 3.07%, #7F4A88 189.91%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home-container{
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.text-container{
+    text-align: left;
+    
+}
+
+
+/* <<<---------------------    Logo    --------------------->>> */
+
+
+.logo-div{
+    color: #FF8139;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding-top: 180px;
+}
+
+.nav-logo{
+    width:50px;
+    height: auto;
+    vertical-align: baseline;
+}
+
+.nav-span{
+    color: #FFD9E8;
+}
+
+/* <<<---------------------    Heading   --------------------->>> */
+.text-container{
+    z-index: 9999;
+}
+.home-heading{
+    color: #FFD9E8;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.home-heading2{
+    color: #FFD9E8;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+/* <<<---------------------   button   --------------------->>> */
+
+.home-btn{
+    text-decoration: none;
+    color: #FFD9E8;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to left, #FF8139 50%, #fe5d00 50%) right;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-btn:hover{
+    background-position: left;
+    
+}
+
+/* <<<---------------------   Img   --------------------->>> */
+
+.robochat-image{
+    margin: 180px 0;
+    width: 100%;
+    height: auto;
+}
+
+
+/* <<<---------------------    For Mobile  --------------------->>> */
+
+
+@media screen and (max-width:1000px) {
+
+    .home-container{
+        margin: 0 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .text-container{
+        text-align: left;
+        
+    }
+
+    /* <<<---------------------    Heading   --------------------->>> */
+   
+    .home-heading{
+        font-size: 2.7rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    .home-heading2{
+        color: #FFD9E8;
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+    /* <<<---------------------   Img   --------------------->>> */
+
+    .home-img-container{
+        text-align: right;
+    }
+    .robochat-image{
+        
+        width: 100%;
+        height: auto;
+        margin-top: -80px;
+        opacity: 50%;
+        
+    }
+
+    /* <<<---------------------    Logo    --------------------->>> */
+
+
+    .logo-div{
+        padding-top: 50px;
+    }
+
+    .nav-logo{
+        width:50px;
+        height: auto;
+        vertical-align: baseline;
+    }
+
+}

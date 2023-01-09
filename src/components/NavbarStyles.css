@@ -1,5 +1,10 @@
 .nav-section{
     background-color: #4A266A;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9999;
 }
 
 .nav-container{
@@ -39,6 +44,7 @@
     font-size: 1.3rem;
     padding: 5px 20px;
     border-radius: 5px;
+    border: none;
     display: inline-block;
     position: absolute;
     right: 0;
@@ -52,4 +58,18 @@
 .nav-logout:hover{
     background-position: left;
     
+}
+
+
+/* <<<---------------------    For Mobile  --------------------->>> */
+
+
+@media screen and (max-width:850px) {
+
+/* <<<---------------------    logout btn    --------------------->>> */
+
+.nav-logout{
+    font-weight: 400;
+}
+
 }
