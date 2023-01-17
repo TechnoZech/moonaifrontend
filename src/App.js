@@ -32,8 +32,8 @@ const [user, setUser] = useState(null);
       {/* <Footer /> */}
       <Routes>
 	  				<Route path='/Home' element={<Home />}/>
-	  				<Route path="*" element={ user ?  <Main /> : <Navigate to="/login" />} />
-					<Route path="/" exact element={user ? <Main user={user} /> : <Navigate to="/login" />} />
+	  				<Route path="*" element={ user ?  <Main /> : <Navigate to="/Home" />} />
+					<Route path="/" exact element={user ? <Main user={user} /> : <Navigate to="/Home" />} />
 					<Route path="/Login" exact element={user ? <Navigate to="/" /> : <Login />} />
 				</Routes>
       </Router>
