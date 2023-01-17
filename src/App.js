@@ -9,7 +9,7 @@ import Home from './components/Home';
 
 function App() {
 
-//Login and signup function
+//Fetching User data from backend
 const [user, setUser] = useState(null);
 
 	const getUser = async () => {
@@ -33,8 +33,8 @@ const [user, setUser] = useState(null);
       <Routes>
 	  				<Route path='/Home' element={<Home />}/>
 	  				<Route path="*" element={ user ?  <Main /> : <Navigate to="/login" />} />
-					<Route path="/" element={user ? <Main user={user} /> : <Navigate to="/login" />} />
-					<Route path="/Login" element={user ? <Navigate to="/" /> : <Login />} />
+					<Route path="/" exact element={user ? <Main user={user} /> : <Navigate to="/login" />} />
+					<Route path="/Login" exact element={user ? <Navigate to="/" /> : <Login />} />
 				</Routes>
       </Router>
     </>
