@@ -10,7 +10,7 @@ import Home from './components/Home';
 function App() {
 
 //Fetching User data from backend
-const [user, setUser] = useState(null);
+const [user, setUser] = useState(user);
 
 	const getUser = async () => {
 		try {
