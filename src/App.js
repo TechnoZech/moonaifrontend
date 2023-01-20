@@ -10,13 +10,13 @@ import Home from './components/Home';
 function App() {
 
 //Fetching User data from backend
-const [user, setUser] = useState(user);
+const [user, setUser] = useState(null);
 
 	const getUser = async () => {
 		try {
 			const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
 			const { data } = await axios.get(url, { withCredentials: true });
-			setUser(data.user._json);
+			setUser(user);
 		} catch (err) {
 			console.log(err);
 		}
