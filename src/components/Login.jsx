@@ -6,10 +6,12 @@ import googleicon from "../images/googlelogo.png";
 function Login() {
 
   const googleAuthSignIn = () => {
+    
     window.open(
 			`${process.env.REACT_APP_API_URL}/auth/google/callback`,
 			"_self"
 		);
+    
 	};
   return (
     <>
